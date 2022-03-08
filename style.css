@@ -37,6 +37,18 @@ p {
   cursor:pointer;
 }
 
+.error {
+  color: red;
+}
+
+.gut {
+  color: green;
+}
+
+.coolio {
+  color: violet;
+}
+
 #gui {
   margin: 0;
   width: 300px;
@@ -72,5 +84,10 @@ p {
   width: 300px;
   height: 234px;
   border-radius: 5px;
+  overflow-y: auto;
   background-color: #2c2c2c;
+}
+
+#time {
+  color: red;
 }
