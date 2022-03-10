@@ -4,7 +4,7 @@ const online = document.getElementById("online");
 const vers = document.getElementById("vers");
 
 github.onclick = function () {
-  window.open("");
+  window.open("https://github.com/CodeSalvageON/Oak-Knoll-WWW");
 }
 
 setInterval(function () {
