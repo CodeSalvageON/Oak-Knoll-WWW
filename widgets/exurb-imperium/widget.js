@@ -1,0 +1,1 @@
+window.open("https://theoutlet.netlify.app");
