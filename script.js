@@ -37,15 +37,41 @@ const prompt = document.getElementById("prompt");
 const return_btn = document.getElementById("return");
 
 let selected_widget = 0;
+let widget_1_widget = "";
+let widget_2_widget = "";
+let widget_3_widget = "";
 
 widget1_btn.onclick = function () {
   widget_btns.style.display = "none";
   widget_options.style.display = "block";
   prompt.style.display = "none";
+
+  selected_widget = 1;
 }
 
 return_btn.onclick = function () {
   widget_btns.style.display = "block";
   widget_options.style.display = "";
   prompt.style.display = "block";
+
+  selected_widget = 0;
+}
+
+// Widgets
+const imperium = document.getElementById("imperium");
+
+imperium.onclick = function () {
+  if (selected_widget === 1) {
+    widget_1_widget = "imperium";
+  }
+
+  else if (selected_widget === 2) {
+    widget_2_widget = "imperium";
+  }
+
+  else {
+    widget_3_widget = "imperium";
+  }
+
+  return_btn.click();
 }
