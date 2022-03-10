@@ -37,12 +37,34 @@ p {
   cursor:pointer;
 }
 
+.widget-option {
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid white;
+}
+
+.widget-option:hover {
+  cursor: pointer;
+}
+
 .error {
   color: red;
 }
 
 .gut {
   color: green;
+}
+
+.btn {
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: powderblue;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .coolio {
@@ -90,4 +112,27 @@ p {
 
 #time {
   color: red;
+}
+
+#widget_options {
+  display: none;
+  height: 183px;
+}
+
+#imperium {
+  border-radius: 5px;
+  background-size: cover;
+  background-image: url('outlet.png');
+}
+
+#finder {
+  background-color: #aeb2ce;
+}
+
+#proxy {
+  background-color: #8894ef;
+}
+
+#unblock {
+  background-color: #343751;
 }

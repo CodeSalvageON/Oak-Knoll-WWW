@@ -27,3 +27,18 @@ setInterval(function () {
 
 const newNewDate = new Date();
 time.innerText = "Time: " + newNewDate;
+
+const widget_btns = document.getElementById("widget_btns");
+const widget_options = document.getElementById("widget_options")
+const widget1_btn = document.getElementById("widget1");
+const widget2_btn = document.getElementById("widget2");
+const widget3_btn = document.getElementById("widget3");
+const prompt = document.getElementById("prompt");
+
+let selected_widget = 0;
+
+widget1_btn.onclick = function () {
+  widget_btns.style.display = "none";
+  widget_options.style.display = "block";
+  prompt.style.display = "none";
+}
