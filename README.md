@@ -14,4 +14,4 @@ After which you'll most likely see a new window pop up with funky looking button
 <br/>
 My personal favorite combinations to use:
 
-![setup1](https://codesalvageon.github.io/magichat/images/Screen%20Shot%202022-03-12%20at%203.53.32%20PM.png)
+<img src="https://codesalvageon.github.io/magichat/images/Screen%20Shot%202022-03-12%20at%203.53.32%20PM.png" width="200"/>
