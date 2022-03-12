@@ -21,3 +21,10 @@ My personal favorite combinations to use:
 * (Obviously, the script won't run right if its for a specific webpage because Oak Knoll is a web window.)
 ### Custom widget script example
 You can find an example of a custom widget script [here](https://github.com/CodeSalvageON/Oak-Knoll-WWW/blob/main/widgets/slowdown.js).
+* The above script slows down your local network, so don't run it if you don't know what you're doing!
+
+## FAQ
+<details>
+  <summary><b>My window disappeared ;(</b></summary>
+  Hover over your browser's icon and wait to see the "preview" of the Oak Knoll window. That, or just run the script again.
+</details>
