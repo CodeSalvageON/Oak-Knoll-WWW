@@ -55,6 +55,7 @@ const imperium_options = document.getElementById("imperium-options");
 const af_options = document.getElementById("af-options");
 const proxy_options = document.getElementById("proxy-options");
 const unblocker_options = document.getElementById("unblocker-options");
+const calculator_options = document.getElementById("calculator-options");
 
 let selected_widget = 0;
 let widget_1_widget = "";
@@ -86,6 +87,13 @@ widget1_btn.onclick = function () {
   else if (widget_1_widget === "unblocker") {
     widget_btns.style.display = "none";
     unblocker_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_1_widget === "calculator") {
+    widget_btns.style.display = "none";
+    calculator_options.style.display = "block";
     prompt.style.display = "none";
     reset_stuff.style.display = "none";
   }
@@ -166,6 +174,11 @@ const unblocker = document.getElementById("unblocker");
 const return_unblocker = document.getElementById("return-unblocker");
 const unblocker_form = document.getElementById("unblocker-form");
 const unblocker_url = document.getElementById("unblocker-url");
+
+const calculator = document.getElementById("calculator");
+const return_calculator = document.getElementById("return-calculator");
+const calculator_form = document.getElementById("calculator-form");
+const calculator_url = document.getElementById("calculator-url");
 
 imperium.onclick = function () {
   if (selected_widget === 1) {
@@ -294,6 +307,40 @@ unblocker_form.onsubmit = function () {
 return_unblocker.onclick = function () {
   widget_btns.style.display = "block";
   unblocker_options.style.display = "none";
+  prompt.style.display = "block";
+  reset_stuff.style.display = "block";
+}
+
+calculator.onclick = function () {
+  if (selected_widget === 1) {
+    widget_1_widget = "calculator";
+    widget1_btn.style.fontSize = "20px";
+    widget1_btn.innerText = "Calculator";
+  }
+
+  else if (selected_widget === 2) {
+    widget_2_widget = "calculator";
+    widget2_btn.style.fontSize = "20px";
+    widget2_btn.innerText = "Calculator";
+  }
+
+  else {
+    widget_3_widget = "calculator";
+    widget3_btn.style.fontSize = "20px";
+    widget3_btn.innerText = "Calculator";
+  }
+
+  return_btn.click();
+}
+
+calculator_form.onsubmit = function () {
+  event.preventDefault();
+  alert(eval(calculator_url.value));
+}
+
+return_calculator.onclick = function () {
+  widget_btns.style.display = "block";
+  calculator_options.style.display = "none";
   prompt.style.display = "block";
   reset_stuff.style.display = "block";
 }

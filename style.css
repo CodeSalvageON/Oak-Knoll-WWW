@@ -115,7 +115,7 @@ p {
   color: red;
 }
 
-#widget_options, #imperium-options, #af-options, #proxy-options, #unblocker-options {
+#widget_options, #imperium-options, #af-options, #proxy-options, #unblocker-options, #calculator-options {
   display: none;
   height: 183px;
 }
@@ -136,6 +136,10 @@ p {
 
 #unblock {
   background-color: #343751;
+}
+
+#calculator {
+  background-color: crimson;
 }
 
 #overpass {
