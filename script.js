@@ -49,6 +49,22 @@ widget1_btn.onclick = function () {
   selected_widget = 1;
 }
 
+widget2_btn.onclick = function () {
+  widget_btns.style.display = "none";
+  widget_options.style.display = "block";
+  prompt.style.display = "none";
+
+  selected_widget = 1;
+}
+
+widget3_btn.onclick = function () {
+  widget_btns.style.display = "none";
+  widget_options.style.display = "block";
+  prompt.style.display = "none";
+
+  selected_widget = 1;
+}
+
 return_btn.onclick = function () {
   widget_btns.style.display = "block";
   widget_options.style.display = "";
