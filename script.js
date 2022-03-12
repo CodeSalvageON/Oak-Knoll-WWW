@@ -70,10 +70,16 @@ imperium.onclick = function () {
 
   else if (selected_widget === 2) {
     widget_2_widget = "imperium";
+    widget2_btn.style.background = "url('outlet.png')";
+    widget2_btn.style.fontSize = "20px";
+    widget2_btn.innerText = "Exurb Imperium";
   }
 
   else {
     widget_3_widget = "imperium";
+    widget3_btn.style.background = "url('outlet.png')";
+    widget3_btn.style.fontSize = "20px";
+    widget3_btn.innerText = "Exurb Imperium";
   }
 
   return_btn.click();
