@@ -54,7 +54,7 @@ widget2_btn.onclick = function () {
   widget_options.style.display = "block";
   prompt.style.display = "none";
 
-  selected_widget = 1;
+  selected_widget = 2;
 }
 
 widget3_btn.onclick = function () {
@@ -62,7 +62,7 @@ widget3_btn.onclick = function () {
   widget_options.style.display = "block";
   prompt.style.display = "none";
 
-  selected_widget = 1;
+  selected_widget = 3;
 }
 
 return_btn.onclick = function () {
