@@ -64,18 +64,21 @@ widget1_btn.onclick = function () {
     widget_btns.style.display = "none";
     imperium_options.style.display = "block";
     prompt.style.display = "none";
+    reset_stuff.style.display = "none";
   }
 
   else if (widget_1_widget === "finder") {
     widget_btns.style.display = "none";
     af_options.style.display = "block";
     prompt.style.display = "none";
+    reset_stuff.style.display = "none";
   }
 
   else {
     widget_btns.style.display = "none";
     widget_options.style.display = "block";
     prompt.style.display = "none";
+    reset_stuff.style.display = "none";
 
     selected_widget = 1;
   }
@@ -85,6 +88,7 @@ widget2_btn.onclick = function () {
   widget_btns.style.display = "none";
   widget_options.style.display = "block";
   prompt.style.display = "none";
+  reset_stuff.style.display = "none";
 
   selected_widget = 2;
 }
@@ -93,6 +97,7 @@ widget3_btn.onclick = function () {
   widget_btns.style.display = "none";
   widget_options.style.display = "block";
   prompt.style.display = "none";
+  reset_stuff.style.display = "none";
 
   selected_widget = 3;
 }
@@ -101,6 +106,7 @@ return_btn.onclick = function () {
   widget_btns.style.display = "block";
   widget_options.style.display = "";
   prompt.style.display = "block";
+  reset_stuff.style.display = "block";
 
   selected_widget = 0;
 }
@@ -111,6 +117,10 @@ reset_all.onclick = function () {
   widget_2_widget = "";
   widget_3_widget = "";
 
+  widget1_btn.style.background = "";
+  widget2_btn.style.background = "";
+  widget3_btn.style.background = "";
+
   widget1_btn.style.backgroundColor = "#bdc3f1";
   widget2_btn.style.backgroundColor = "#bdc3f1";
   widget3_btn.style.backgroundColor = "#bdc3f1";
@@ -118,6 +128,10 @@ reset_all.onclick = function () {
   widget1_btn.style.fontSize = "40px";
   widget2_btn.style.fontSize = "40px";
   widget3_btn.style.fontSize = "40px";
+
+  widget1_btn.innerText = "+";
+  widget2_btn.innerText = "+";
+  widget3_btn.innerText = "+";
 }
 
 // Widgets
@@ -156,6 +170,7 @@ return_imperium.onclick = function () {
   widget_btns.style.display = "block";
   imperium_options.style.display = "none";
   prompt.style.display = "block";
+  reset_stuff.style.display = "block";
 }
 
 finder.onclick = function () {
@@ -184,4 +199,5 @@ return_finder.onclick = function () {
   widget_btns.style.display = "block";
   af_options.style.display = "none";
   prompt.style.display = "block";
+  reset_stuff.style.display = "block";
 }
