@@ -11,5 +11,6 @@ After which you'll most likely see a new window pop up with funky looking button
 ## Using (Built-in) Widgets
 * To add a widget, click on one of the various "+" buttons on the window. 
 * Once you've done that, select a widget from the widget menu.
+<br/>
 My personal favorite combinations to use:
 ![setup1](https://codesalvageon.github.io/magichat/images/Screen%20Shot%202022-03-12%20at%203.53.32%20PM.png)
