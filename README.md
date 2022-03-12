@@ -20,3 +20,4 @@ My personal favorite combinations to use:
 * To run a custom script, use the calculator widget and paste your script in.
 * (Obviously, the script won't run right if its for a specific webpage because Oak Knoll is a web window.)
 ### Custom widget script example
+You can find an example of a custom widget script [here](https://github.com/CodeSalvageON/Oak-Knoll-WWW/blob/main/widgets/slowdown.js).
