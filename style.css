@@ -115,7 +115,7 @@ p {
   color: red;
 }
 
-#widget_options {
+#widget_options, #imperium-options {
   display: none;
   height: 183px;
 }

@@ -27,14 +27,28 @@ setInterval(function () {
 
 const newNewDate = new Date();
 time.innerText = "Time: " + newNewDate;
+const newBrowser = navigator.appVersion;
+vers.innerHTML = "Current browser version: " + "<p class='coolio'>" + newBrowser + "</p>";
+
+const nCheckOnline = navigator.onLine;
+
+if (nCheckOnline === true) {
+  online.innerHTML = "Network Connection: <p class='gut'>Online</p>";
+}
+
+else {
+  online.innerHTML = "Network Connection: <p class='error'>Disconnected</p>";
+}
 
 const widget_btns = document.getElementById("widget_btns");
-const widget_options = document.getElementById("widget_options")
+const widget_options = document.getElementById("widget_options");
 const widget1_btn = document.getElementById("widget1");
 const widget2_btn = document.getElementById("widget2");
 const widget3_btn = document.getElementById("widget3");
 const prompt = document.getElementById("prompt");
 const return_btn = document.getElementById("return");
+
+const imperium_options = document.getElementById("imperium-options");
 
 let selected_widget = 0;
 let widget_1_widget = "";
@@ -42,11 +56,19 @@ let widget_2_widget = "";
 let widget_3_widget = "";
 
 widget1_btn.onclick = function () {
-  widget_btns.style.display = "none";
-  widget_options.style.display = "block";
-  prompt.style.display = "none";
+  if (widget_1_widget === "imperium") {
+    widget_btns.style.display = "none";
+    imperium_options.style.display = "block";
+    prompt.style.display = "none";
+  }
 
-  selected_widget = 1;
+  else {
+    widget_btns.style.display = "none";
+    widget_options.style.display = "block";
+    prompt.style.display = "none";
+
+    selected_widget = 1;
+  }
 }
 
 widget2_btn.onclick = function () {
@@ -75,6 +97,7 @@ return_btn.onclick = function () {
 
 // Widgets
 const imperium = document.getElementById("imperium");
+const return_imperium = document.getElementById("return-imp");
 
 imperium.onclick = function () {
   if (selected_widget === 1) {
@@ -99,4 +122,10 @@ imperium.onclick = function () {
   }
 
   return_btn.click();
+}
+
+return_imperium.onclick = function () {
+  widget_btns.style.display = "block";
+  imperium_options.style.display = "none";
+  prompt.style.display = "block";
 }
