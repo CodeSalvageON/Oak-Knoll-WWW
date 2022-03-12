@@ -24,7 +24,7 @@ You can find an example of a custom widget script [here](https://github.com/Code
 * The above script slows down your local network, so don't run it if you don't know what you're doing!
 
 ## FAQ
-![math wrath](https://staticdelivery.nexusmods.com/mods/130/images/thumbnails/60843-0-1445818253.png)
+<img src="https://staticdelivery.nexusmods.com/mods/130/images/thumbnails/60843-0-1445818253.png" width="200">
 <details>
   <summary><b>My window disappeared ;(</b></summary>
   Hover over your browser's icon and wait to see the "preview" of the Oak Knoll window. That, or just run the script again.
