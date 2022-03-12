@@ -115,7 +115,7 @@ p {
   color: red;
 }
 
-#widget_options, #imperium-options, #af-options {
+#widget_options, #imperium-options, #af-options, #proxy-options, #unblocker-options {
   display: none;
   height: 183px;
 }

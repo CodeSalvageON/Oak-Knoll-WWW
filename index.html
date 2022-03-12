@@ -34,7 +34,7 @@
           <hr/>
           <p>Basic proxy, not guarenteed to work for all sites, but works with many</p>
         </div>
-        <div class="widget-option glow" id="unblock">
+        <div class="widget-option glow" id="unblocker">
           Unblocker
           <hr/>
           <p>Basic unblocker, not guarenteed to work for all sites</p>
@@ -53,6 +53,24 @@
         <hr/>
         <p>Finds answers around the internet.</p>
         <iframe src="https://overpass.codesalvageon.repl.co/" width="300" height="200" frameBorder="0"></iframe>
+      </section>
+      <section id="proxy-options" class="add-scroll">
+        <p>Proxy</p>
+        <p class="btn" id="return-proxy">Return</p>
+        <hr/>
+        <p>Basic proxy for websites.</p>
+        <form id="proxy-form">
+          <p>URL: <input id="proxy-url" required class="btn"/><button class="btn">Go!</button></p>
+        </form>
+      </section>
+      <section id="unblocker-options" class="add-scroll">
+        <p>Unblocker</p>
+        <p class="btn" id="return-unblocker">Return</p>
+        <hr/>
+        <p>Basic unblocker for websites. Ignore the "deceptive website" warning and just click details, I don't know why it does that.</p>
+        <form id="unblocker-form">
+          <p>URL: <input id="unblocker-url" required class="btn"/><button class="btn">Go!</button></p>
+        </form>
       </section>
       <br/>
       <section id="prompt">
