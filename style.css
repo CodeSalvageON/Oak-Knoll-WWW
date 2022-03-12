@@ -115,7 +115,7 @@ p {
   color: red;
 }
 
-#widget_options, #imperium-options {
+#widget_options, #imperium-options, #af-options {
   display: none;
   height: 183px;
 }
@@ -136,4 +136,8 @@ p {
 
 #unblock {
   background-color: #343751;
+}
+
+#overpass {
+  overflow: hidden;
 }

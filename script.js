@@ -48,7 +48,11 @@ const widget3_btn = document.getElementById("widget3");
 const prompt = document.getElementById("prompt");
 const return_btn = document.getElementById("return");
 
+const reset_stuff = document.getElementById("reset-stuff");
+const reset_all = document.getElementById("reset-all");
+
 const imperium_options = document.getElementById("imperium-options");
+const af_options = document.getElementById("af-options");
 
 let selected_widget = 0;
 let widget_1_widget = "";
@@ -59,6 +63,12 @@ widget1_btn.onclick = function () {
   if (widget_1_widget === "imperium") {
     widget_btns.style.display = "none";
     imperium_options.style.display = "block";
+    prompt.style.display = "none";
+  }
+
+  else if (widget_1_widget === "finder") {
+    widget_btns.style.display = "none";
+    af_options.style.display = "block";
     prompt.style.display = "none";
   }
 
@@ -95,9 +105,27 @@ return_btn.onclick = function () {
   selected_widget = 0;
 }
 
+// Reset Widgets
+reset_all.onclick = function () {
+  widget_1_widget = "";
+  widget_2_widget = "";
+  widget_3_widget = "";
+
+  widget1_btn.style.backgroundColor = "#bdc3f1";
+  widget2_btn.style.backgroundColor = "#bdc3f1";
+  widget3_btn.style.backgroundColor = "#bdc3f1";
+
+  widget1_btn.style.fontSize = "40px";
+  widget2_btn.style.fontSize = "40px";
+  widget3_btn.style.fontSize = "40px";
+}
+
 // Widgets
 const imperium = document.getElementById("imperium");
 const return_imperium = document.getElementById("return-imp");
+
+const finder = document.getElementById("finder");
+const return_finder = document.getElementById("return-af");
 
 imperium.onclick = function () {
   if (selected_widget === 1) {
@@ -127,5 +155,33 @@ imperium.onclick = function () {
 return_imperium.onclick = function () {
   widget_btns.style.display = "block";
   imperium_options.style.display = "none";
+  prompt.style.display = "block";
+}
+
+finder.onclick = function () {
+  if (selected_widget === 1) {
+    widget_1_widget = "finder";
+    widget1_btn.style.fontSize = "20px";
+    widget1_btn.innerText = "Overpass";
+  }
+
+  else if (selected_widget === 2) {
+    widget_2_widget = "finder";
+    widget2_btn.style.fontSize = "20px";
+    widget2_btn.innerText = "Overpass";
+  }
+
+  else {
+    widget_3_widget = "finder";
+    widget3_btn.style.fontSize = "20px";
+    widget3_btn.innerText = "Overpass";
+  }
+
+  return_btn.click();
+}
+
+return_finder.onclick = function () {
+  widget_btns.style.display = "block";
+  af_options.style.display = "none";
   prompt.style.display = "block";
 }
