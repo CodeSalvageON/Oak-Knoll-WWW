@@ -109,21 +109,95 @@ widget1_btn.onclick = function () {
 }
 
 widget2_btn.onclick = function () {
-  widget_btns.style.display = "none";
-  widget_options.style.display = "block";
-  prompt.style.display = "none";
-  reset_stuff.style.display = "none";
+  if (widget_2_widget === "imperium") {
+    widget_btns.style.display = "none";
+    imperium_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
 
-  selected_widget = 2;
+  else if (widget_2_widget === "finder") {
+    widget_btns.style.display = "none";
+    af_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_2_widget === "proxy") {
+    widget_btns.style.display = "none";
+    proxy_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_2_widget === "unblocker") {
+    widget_btns.style.display = "none";
+    unblocker_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_2_widget === "calculator") {
+    widget_btns.style.display = "none";
+    calculator_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else {
+    widget_btns.style.display = "none";
+    widget_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+
+    selected_widget = 2;
+  }
 }
 
 widget3_btn.onclick = function () {
-  widget_btns.style.display = "none";
-  widget_options.style.display = "block";
-  prompt.style.display = "none";
-  reset_stuff.style.display = "none";
+  if (widget_3_widget === "imperium") {
+    widget_btns.style.display = "none";
+    imperium_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
 
-  selected_widget = 3;
+  else if (widget_3_widget === "finder") {
+    widget_btns.style.display = "none";
+    af_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_3_widget === "proxy") {
+    widget_btns.style.display = "none";
+    proxy_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_3_widget === "unblocker") {
+    widget_btns.style.display = "none";
+    unblocker_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else if (widget_3_widget === "calculator") {
+    widget_btns.style.display = "none";
+    calculator_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+  }
+
+  else {
+    widget_btns.style.display = "none";
+    widget_options.style.display = "block";
+    prompt.style.display = "none";
+    reset_stuff.style.display = "none";
+
+    selected_widget = 3;
+  }
 }
 
 return_btn.onclick = function () {
