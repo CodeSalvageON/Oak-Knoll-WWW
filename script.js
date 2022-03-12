@@ -63,6 +63,9 @@ const imperium = document.getElementById("imperium");
 imperium.onclick = function () {
   if (selected_widget === 1) {
     widget_1_widget = "imperium";
+    widget1_btn.style.background = "url('outlet.png')";
+    widget1_btn.style.fontSize = "20px";
+    widget1_btn.innerText = "Exurb Imperium";
   }
 
   else if (selected_widget === 2) {
