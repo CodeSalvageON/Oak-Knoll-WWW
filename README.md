@@ -1,5 +1,5 @@
 # Oak Knoll
-Once you get used to it, it's be a great tool.
+It won't solve all your problems, but it'll give you a good starting point and will be a good learning experience.
 
 ## Basic Setup
 First things first, inspect element, open the console, and copy and paste this into it:
